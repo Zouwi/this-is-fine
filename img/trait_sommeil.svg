@@ -1,0 +1,12 @@
+<svg width="370" height="11" viewBox="0 0 370 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="trait_sommeil">
+<line id="Line 3" x1="2" y1="6" x2="363" y2="6" stroke="url(#paint0_linear_99_6)" stroke-width="4" stroke-linecap="round"/>
+<circle id="Ellipse 3" cx="364.5" cy="5.5" r="5.5" fill="#FE6F67"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_99_6" x1="11.1963" y1="8" x2="365" y2="8" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFDED2"/>
+<stop offset="1" stop-color="#FF655E"/>
+</linearGradient>
+</defs>
+</svg>
