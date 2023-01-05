@@ -106,7 +106,10 @@ function bestscroll() {
     }
     if (document.documentElement.scrollTop > 5300) {
         document.querySelector('body').style.backgroundColor = '#FCFCEC';
-        document.querySelector('titre').style.color = '#355575';
+        document.querySelector('.titre2').style.color = '#C15535';
+    }
+    if (document.documentElement.scrollTop < 5300) {
+        document.querySelector('.titre2').style.color = '#CDA7D7';
     }
     if (document.documentElement.scrollTop > 1200) {
         document.querySelector('.traitrond').style.animation = 'traitrond 2s';
@@ -124,9 +127,14 @@ function bestscroll() {
         document.querySelector('.ligne5').style.animation = 'traitfact 2s ';
         document.querySelector('.rondfact5').style.animation = 'rondfact 2s ';
     }
-    if (document.documentElement.scrollTop > 1650) {
-        document.querySelector('.rondchiffre').style.animation = 'rondchiffre 2s';
+    if (document.documentElement.scrollTop > 1950) {
+       /* document.querySelector('.rondchiffre').style.animation = 'rondchiffre 2s';
+        document.querySelector('.traitchiffre').style.animation = 'traitchiffre 2s';*/
+    }
+
+    if(document.querySelector('.traitchiffre').getBoundingClientRect().top - window.innerHeight < 0){
         document.querySelector('.traitchiffre').style.animation = 'traitchiffre 2s';
+        document.querySelector('.rondchiffre').style.animation = 'rondchiffre 2s';
     }
 }
 
@@ -196,4 +204,22 @@ document.querySelector('.enfant').addEventListener("click", changecouleur5);
 function changecouleur5() {
     document.querySelector(".fill51").classList.toggle('pareil');
     document.querySelector(".fill52").classList.toggle('pareil');
+}
+
+// Le hover du graphique 
+document.querySelectorAll(".rondgraph").forEach(e=>{
+    e.addEventListener("mouseenter", apparaitremulti)
+    e.addEventListener("mouseleave", disparaitremulti)
+})
+
+function apparaitremulti() {
+    let num = this.dataset.e;
+    document.querySelector(".popupaugment"+num).classList.add("show");
+        //this.style.display="initial";
+}
+
+function disparaitremulti() {
+    let num = this.dataset.e;
+    document.querySelector(".popupaugment"+num).classList.remove("show");
+        //this.style.display="initial";
 }

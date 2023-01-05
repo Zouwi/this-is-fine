@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Notable&display=swap" rel="stylesheet">
 </head>
 
@@ -28,7 +29,7 @@
         </div>
     </div>
     <div class="imgterre">
-        <svg class="terreclair" width="1304" height="1133" viewBox="0 0 1004 833" fill="none"
+        <svg class="terreclair" width="1304" height="1133" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1004 833" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g id="Terre">
                 <g id="Capa 1">
@@ -180,7 +181,7 @@
             <div class="lesfacteurs">
                 <p>Solitude et isolement</p>
                 <svg width="505" height="11" viewBox="0 0 505 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="Group 1">
+                    <g id="trait_solitude">
                         <line pathlength="100" class="ligne" id="Line 1" x1="2" y1="5" x2="498" y2="5"
                             stroke="url(#paint0_linear_99_4)" stroke-width="4" stroke-linecap="round" />
                         <circle class="rondfact" id="Ellipse 1" cx="499.5" cy="5.5" r="5.5" fill="#83B9F5" />
@@ -195,7 +196,7 @@
                 </svg>
 
                 <p>Difficultés à se concentrer</p>
-                <svg width="303" height="11" viewBox="0 0 303 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="concentrer" width="303" height="11" viewBox="0 0 303 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="trait_concentrer">
                         <line pathlength="100" class="ligne2" id="Line 2" x1="2" y1="5" x2="296" y2="5"
                             stroke="url(#paint0_linear_99_5)" stroke-width="4" stroke-linecap="round" />
@@ -211,7 +212,7 @@
                 </svg>
 
                 <p>Problèmes de sommeil</p>
-                <svg width="370" height="11" viewBox="0 0 370 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="sommeil" width="370" height="11" viewBox="0 0 370 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="trait_sommeil">
                         <line pathlength="100" class="ligne3" id="Line 3" x1="2" y1="6" x2="363" y2="6"
                             stroke="url(#paint0_linear_99_6)" stroke-width="4" stroke-linecap="round" />
@@ -227,7 +228,7 @@
                 </svg>
 
                 <p>Perturbation des habitudes alimentaires</p>
-                <svg width="206" height="11" viewBox="0 0 206 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="alimentaire" width="206" height="11" viewBox="0 0 206 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="trait_alimentaire">
                         <line pathlength="100" class="ligne4" id="Line 5" x1="2" y1="5" x2="199" y2="5"
                             stroke="url(#paint0_linear_99_8)" stroke-width="4" stroke-linecap="round" />
@@ -243,7 +244,7 @@
                 </svg>
 
                 <p>Inquiétudes concernant les résultats scolaires</p>
-                <svg width="435" height="11" viewBox="0 0 435 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="scolaire" width="435" height="11" viewBox="0 0 435 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="trait_scolaire">
                         <line pathlength="100" class="ligne5" id="Line 4" x1="2" y1="6" x2="428" y2="6"
                             stroke="url(#paint0_linear_99_7)" stroke-width="4" stroke-linecap="round" />
@@ -518,8 +519,8 @@
                             d="M85.376 161C85.376 158.611 85.376 156.221 85.376 153.832C85.376 151.443 85.376 149.011 85.376 146.536C85.376 142.269 85.9733 138.899 87.168 136.424C88.448 133.864 90.2827 131.773 92.672 130.152C95.0613 128.531 97.9627 126.867 101.376 125.16C104.363 123.795 106.837 122.216 108.8 120.424C110.848 118.632 112.427 116.456 113.536 113.896C114.731 111.251 115.328 108.093 115.328 104.424C115.413 100.072 114.56 96.744 112.768 94.44C111.061 92.136 108.245 90.984 104.32 90.984C100.821 90.984 98.0907 92.0933 96.128 94.312C94.2507 96.5307 93.312 99.944 93.312 104.552V110.824H85.248V102.888C85.248 96.8293 86.912 92.3493 90.24 89.448C93.568 86.4613 98.304 84.968 104.448 84.968C109.227 84.968 113.024 85.6933 115.84 87.144C118.656 88.5947 120.661 90.8133 121.856 93.8C123.136 96.7013 123.776 100.413 123.776 104.936C123.776 110.568 122.581 115.389 120.192 119.4C117.888 123.325 114.389 126.525 109.696 129C107.136 130.195 104.747 131.432 102.528 132.712C100.395 133.992 98.56 135.571 97.024 137.448C95.5733 139.24 94.72 141.587 94.464 144.488C94.208 145.939 93.9947 147.475 93.824 149.096C93.7387 150.717 93.696 152.424 93.696 154.216H124.416V161H85.376ZM135.365 161.36C134.032 161.36 132.952 161.213 132.125 160.92C131.298 160.6 130.698 160.027 130.325 159.2C129.952 158.373 129.765 157.173 129.765 155.6V145.72C129.765 143.853 130.178 142.573 131.005 141.88C131.858 141.187 133.258 140.84 135.205 140.84C137.098 140.84 138.458 141.187 139.285 141.88C140.138 142.573 140.565 143.853 140.565 145.72V150.84H132.245V156.44C132.245 157.72 132.445 158.613 132.845 159.12C133.245 159.6 134.058 159.84 135.285 159.84C136.405 159.84 137.152 159.6 137.525 159.12C137.898 158.64 138.085 157.747 138.085 156.44V153.88H140.565V155.56C140.565 157.107 140.378 158.307 140.005 159.16C139.632 159.987 139.058 160.56 138.285 160.88C137.538 161.2 136.565 161.36 135.365 161.36ZM132.245 149.56H138.085V145.64C138.085 144.52 137.898 143.707 137.525 143.2C137.152 142.693 136.378 142.44 135.205 142.44C134.032 142.44 133.245 142.693 132.845 143.2C132.445 143.707 132.245 144.52 132.245 145.64V149.56ZM135.085 139.16L131.805 135.48H134.285L136.525 139.16H135.085ZM144.112 161V141.2H146.192L146.472 143.4C146.766 142.627 147.246 142.013 147.912 141.56C148.606 141.107 149.446 140.88 150.432 140.88C151.979 140.88 153.059 141.2 153.672 141.84C154.312 142.48 154.646 143.413 154.672 144.64L154.232 144.68C154.499 143.533 155.006 142.613 155.752 141.92C156.526 141.227 157.512 140.88 158.712 140.88C160.366 140.88 161.486 141.267 162.072 142.04C162.686 142.813 162.992 144 162.992 145.6V161H160.512V146.04C160.512 144.76 160.312 143.893 159.912 143.44C159.539 142.96 158.886 142.72 157.952 142.72C157.072 142.72 156.339 142.987 155.752 143.52C155.166 144.027 154.846 144.667 154.792 145.44V161H152.312V145.72C152.312 144.627 152.112 143.853 151.712 143.4C151.339 142.947 150.659 142.72 149.672 142.72C148.766 142.72 148.072 142.933 147.592 143.36C147.139 143.787 146.806 144.293 146.592 144.88V161H144.112ZM172.045 161.36C170.711 161.36 169.631 161.213 168.805 160.92C167.978 160.6 167.378 160.027 167.005 159.2C166.631 158.373 166.445 157.173 166.445 155.6V145.72C166.445 143.853 166.858 142.573 167.685 141.88C168.538 141.187 169.938 140.84 171.885 140.84C173.778 140.84 175.138 141.187 175.965 141.88C176.818 142.573 177.245 143.853 177.245 145.72V150.84H168.925V156.44C168.925 157.72 169.125 158.613 169.525 159.12C169.925 159.6 170.738 159.84 171.965 159.84C173.085 159.84 173.831 159.6 174.205 159.12C174.578 158.64 174.765 157.747 174.765 156.44V153.88H177.245V155.56C177.245 157.107 177.058 158.307 176.685 159.16C176.311 159.987 175.738 160.56 174.965 160.88C174.218 161.2 173.245 161.36 172.045 161.36ZM168.925 149.56H174.765V145.64C174.765 144.52 174.578 143.707 174.205 143.2C173.831 142.693 173.058 142.44 171.885 142.44C170.711 142.44 169.925 142.693 169.525 143.2C169.125 143.707 168.925 144.52 168.925 145.64V149.56Z"
                             fill="white" />
                     </g>
-                    <circle class="cercle"id="Ellipse 11" cx="122.5" cy="122.5" r="116.5" stroke="url(#paint0_linear_57_103)"
-                        stroke-width="12" />
+                    <circle class="cercle" id="Ellipse 11" cx="122.5" cy="122.5" r="116.5"
+                        stroke="url(#paint0_linear_57_103)" stroke-width="12" />
                 </g>
                 <defs>
                     <filter id="filter0_d_57_103" x="85.248" y="84.968" width="93.9966" height="78.3921"
@@ -549,6 +550,7 @@
         <div class="titre">
             Une inquiétante augmentation
         </div>
+        
         <svg class="graphique" width="857" height="542" viewBox="0 0 857 542" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g id="augmentation">
@@ -611,16 +613,16 @@
                     stroke="url(#paint0_linear_50_75)" stroke-width="3" stroke-linecap="round" />
                 <path id="Vector 2" d="M63.5 256H257.5L451.5 249L643 219L823 27.5" stroke="url(#paint1_linear_50_75)"
                     stroke-width="3" stroke-linecap="round" />
-                <circle id="Ellipse 6" cx="64" cy="311" r="6" fill="#8FC9FF" />
-                <circle id="Ellipse 11" cx="64" cy="256" r="6" fill="#CDA7D7" />
-                <circle id="Ellipse 12" cx="258" cy="256" r="6" fill="#CDA7D7" />
-                <circle id="Ellipse 13" cx="450" cy="248" r="6" fill="#CDA7D7" />
-                <circle id="Ellipse 14" cx="641" cy="219" r="6" fill="#CDA7D7" />
-                <circle id="Ellipse 24" cx="823" cy="28" r="6" fill="#CDA7D7" />
-                <circle id="Ellipse 7" cx="258" cy="322" r="6" fill="#8FC9FF" />
-                <circle id="Ellipse 8" cx="450" cy="298" r="6" fill="#8FC9FF" />
-                <circle id="Ellipse 9" cx="641" cy="310" r="6" fill="#8FC9FF" />
-                <circle id="Ellipse 23" cx="823" cy="123" r="6" fill="#8FC9FF" />
+                <circle data-e="" class="rondgraph" id="Ellipse 6" cx="64" cy="311" r="6" fill="#8FC9FF" />
+                <circle data-e="1" class="rondgraph" id="Ellipse 11" cx="64" cy="256" r="6" fill="#CDA7D7" />
+                <circle data-e="3" class="rondgraph" id="Ellipse 12" cx="258" cy="256" r="6" fill="#CDA7D7" />
+                <circle data-e="4" class="rondgraph" id="Ellipse 13" cx="450" cy="248" r="6" fill="#CDA7D7" />
+                <circle data-e="5" class="rondgraph" id="Ellipse 14" cx="641" cy="219" r="6" fill="#CDA7D7" />
+                <circle data-e="7" class="rondgraph" id="Ellipse 24" cx="823" cy="28" r="6" fill="#CDA7D7" />
+                <circle data-e="0" class="rondgraph" id="Ellipse 7" cx="258" cy="322" r="6" fill="#8FC9FF" />
+                <circle data-e="2_1" class="rondgraph" id="Ellipse 8" cx="450" cy="298" r="6" fill="#8FC9FF" />
+                <circle data-e="2" class="rondgraph" id="Ellipse 9" cx="641" cy="310" r="6" fill="#8FC9FF" />
+                <circle data-e="6" class="rondgraph" id="Ellipse 23" cx="823" cy="123" r="6" fill="#8FC9FF" />
                 <path id="Vector 3" d="M737 476.078L774.846 460L810.76 500L832 479.608"
                     stroke="url(#paint2_linear_50_75)" stroke-width="3" stroke-linecap="round" />
                 <path id="Vector 4" d="M585 475.314L619.047 456L653.094 495L679 475.314"
@@ -663,6 +665,36 @@
                 </linearGradient>
             </defs>
         </svg>
+        <div class="popupaugment0 ">
+            8<span>%</span>
+        </div>
+        <div class="popupaugment ">
+            10<span>%</span>
+        </div>
+        <div class="popupaugment1 ">
+            21<span>%</span>
+        </div>
+        <div class="popupaugment2_1 ">
+            13<span>%</span>
+        </div>
+        <div class="popupaugment2 ">
+            8<span>%</span>
+        </div>
+        <div class="popupaugment3 ">
+            21<span>%</span>
+        </div>
+        <div class="popupaugment4 ">
+            22<span>%</span>
+        </div>
+        <div class="popupaugment5 ">
+            28<span>%</span>
+        </div>
+        <div class="popupaugment6 ">
+            49<span>%</span>
+        </div>
+        <div class="popupaugment7 ">
+            69<span>%</span>
+        </div>
         <div class="textaugmentation">
             <p>Et cela <span>ne s’arrête pas !</span> De plus que le <span>COVID</span> n’a pas du tout arrangé la
                 chose, la santé des étudiants
@@ -672,7 +704,7 @@
         </div>
     </div>
     <div class="solution">
-        <div class="titre">
+        <div class="titre2">
             Quelles solutions ?
         </div>
         <div class="textsolution">

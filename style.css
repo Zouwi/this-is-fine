@@ -136,6 +136,12 @@ body {
     padding: 120px 40px 80px 80px;
 }
 
+.titre2 {
+    font-family: 'Notable', sans-serif;
+    color: #CDA7D7;
+    font-size: 28pt;
+    padding: 120px 40px 80px 80px;
+}
 /* Les facteurs  */
 .facteurs>.legrid>.lesfacteurs>p {
     font-family: 'Alumni Sans', sans-serif;
@@ -320,6 +326,91 @@ body > div.vulnerable > div:nth-child(9){
     cursor: pointer;
 }
 
+/* Les stats du grahique d'augmentation  */
+.popupaugment, .popupaugment0, .popupaugment1, .popupaugment2, .popupaugment2_1, .popupaugment3, .popupaugment4, .popupaugment5, .popupaugment6, .popupaugment7 {
+    font-family: 'Alumni Sans', sans-serif;
+    color: black;
+    font-size: 20pt;
+    background-color: white;
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    border: 2px solid #CDA7D7;
+    box-shadow: 3px 4px #CDA7D7;
+    position: absolute;
+}
+
+.popupaugment {
+    top: 5020px;
+    left: 447px;
+}
+
+.popupaugment0 {
+    top: 5030px;
+    left: 645px;
+}
+
+.popupaugment2_1 {
+    top: 5010px;
+    left: 830px;
+}
+
+.popupaugment2 {
+    top: 5020px;
+    left: 1027px;
+}
+
+
+.popupaugment1 {
+    top: 4975px;
+    left: 447px;
+}
+
+.popupaugment3 {
+    top: 4975px;
+    left: 645px;
+}
+
+.popupaugment4 {
+    top: 4960px;
+    left: 830px;
+}
+
+.popupaugment5 {
+    top: 4930px;
+    left: 1020px;
+}
+
+.popupaugment6 {
+    top: 4835px;
+    left: 1200px;
+}
+
+.popupaugment7 {
+    top: 4738px;
+    left: 1200px;
+}
+
+.popupaugment > span, .popupaugment0 > span, .popupaugment1 > span, .popupaugment2 > span, .popupaugment2_1 > span, .popupaugment3 > span, .popupaugment4 > span, .popupaugment5 > span, .popupaugment6 > span, .popupaugment7 > span {
+    font-family: 'Almarai', sans-serif;
+}
+
+/* .rondgraph9:hover~.popupaugment2{
+    display: initial;
+} */
+
+[class*=popupaugment] {
+    display: none;
+}
+
+.show{
+    display: initial !important;
+}
+
+
+
+
+
 /* Animation  */
 
 /* Les étoiles  */
@@ -482,6 +573,7 @@ body > div.vulnerable > div:nth-child(9){
 
 .traitchiffre {
     stroke-dasharray: 100 100;
+    animation-fill-mode: forwards;
 }
 
 @keyframes rondchiffre {
@@ -499,7 +591,8 @@ body > div.vulnerable > div:nth-child(9){
     offset-path: path("M122.5 12.0122C110.939 12.0122 99.1725 13.8571 87.5703 17.7108C29.6821 37.0206 -1.55788 99.5825 17.7109 157.43C36.9796 215.318 99.5415 246.599 157.43 227.289C173.747 221.878 187.932 213.022 199.452 201.789C203.801 197.193 214.1 185.2 220.5 174");
     transform-origin: center;
     transform-box: fill-box;
-    animation: rondchiffre 2s;
+    
+    animation-fill-mode: forwards !important;
 }
 
 @keyframes cercle {
@@ -515,4 +608,162 @@ body > div.vulnerable > div:nth-child(9){
 .cercle {
     animation: cercle 2s infinite linear;
     stroke-dasharray: 10 2;
+    
+}
+
+@media screen and (max-width: 900px)
+{    
+    .grostitre1 {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .grostitre2 {
+        font-size: 160px;
+    }
+
+    .grostitre4 {
+        font-size: 70px;
+        translate: 0px -60px;
+        margin-bottom: 50px;
+    }
+
+    .grostitre3 {
+        font-size: 27px;
+        text-align: center;
+    }
+
+    .grostitre5 {
+        font-size: 27px;
+        text-align: center;
+        margin: 80px 0px 30px 0px;
+    }
+
+    .terreclair {
+        width: 600px;
+        height: 500px;
+        translate: -102px 25px;
+    }
+
+    /* Intro  */
+    .intro {
+        grid-template-columns: 1fr;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .soixante {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+    }
+
+    .textintro {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .titre {
+        font-size: 20px;
+        padding: 20px 0px 20px 0px;
+        margin-top: 50px;
+        text-align: center;
+        border: solid 6px white;
+        border-bottom: hidden 6px white;
+        border-right: hidden 6px white;
+        border-radius: 20px;
+    }
+
+    /* Les traits des facteurs  */
+    .legrid {
+        padding: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .facteurs .legrid .lesfacteurs > p {
+        font-size: 25px;
+    }
+
+    .textfacteur {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .facteurs .legrid .lesfacteurs > svg {
+        width: 200px;
+    }
+
+    /* Partie vulnerable  */
+    .textvulnerable {
+        font-size: 19px;
+        padding: 50px 20px 20px 20px;
+    }
+
+    .foule {
+        width: 350px;
+    }
+
+    body > div.vulnerable > div:nth-child(9) {
+        font-size: 23px;
+        padding: 20px 20px 20px 20px;
+    }
+
+    /* Les chiffres  */
+    .chiffre1 {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+    }
+
+    .rond1 {
+        grid-template-columns: 1fr;
+        padding: 50px 20px 20px 20px;
+        margin: 0px;
+    }
+
+    .textchiffre {
+        font-size: 20px;
+        width: auto;
+        padding: 50px 0px 0px 0px;
+    }
+
+    .rond2 {
+        grid-template-columns: 1fr;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .chiffre2 {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+    }
+
+    /* La partie graphique  */
+
+    .graphique {
+        width: 350px;
+        height: auto;
+        margin: 50px 20px 20px 20px;
+    }
+
+    .textaugmentation {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    /* Partie des solutions  */
+    .titre2 {
+        font-size: 20px;
+        padding: 20px 0px 20px 0px;
+        margin-top: 50px;
+        text-align: center;
+        border: solid 6px white;
+        border-bottom: hidden 6px white;
+        border-right: hidden 6px white;
+        border-radius: 20px;
+    }
+
+    .textsolution {
+        font-size: 17px;
+        translate: 0px 120px;
+    }
 }
