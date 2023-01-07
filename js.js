@@ -2,7 +2,7 @@
 window.onscroll = function () { bestscroll() }
 
 function bestscroll() {
-    if (document.documentElement.scrollTop > 550) {
+    if(document.querySelector('.terreclair').getBoundingClientRect().top - window.innerHeight < 0) {
         document.querySelector('body').style.backgroundColor = '#1A2434';
         document.querySelector('.grostitre3').style.color = '#CDA7D7';
         document.querySelector('.grostitre5').style.color = '#FFFFFF';
@@ -104,18 +104,16 @@ function bestscroll() {
         document.querySelector('#Vector_33').style.stroke = '#C15535';
         document.querySelector('#Vector_34').style.stroke = '#C15535';
     }
-    if (document.documentElement.scrollTop > 5300) {
+    if(document.querySelector('.textsolution').getBoundingClientRect().top - window.innerHeight < 0) {
         document.querySelector('body').style.backgroundColor = '#FCFCEC';
         document.querySelector('.titre2').style.color = '#C15535';
     }
-    if (document.documentElement.scrollTop < 5300) {
-        document.querySelector('.titre2').style.color = '#CDA7D7';
-    }
-    if (document.documentElement.scrollTop > 1200) {
+
+    if(document.querySelector('.traitrond').getBoundingClientRect().top - window.innerHeight < 0) {
         document.querySelector('.traitrond').style.animation = 'traitrond 2s';
         document.querySelector('.rondrond').style.animation = 'rondrond 2s';
     }
-    if (document.documentElement.scrollTop > 1650) {
+    if(document.querySelector('.ligne').getBoundingClientRect().top - window.innerHeight < 0) {
         document.querySelector('.ligne').style.animation = 'traitfact 2s ';
         document.querySelector('.rondfact').style.animation = 'rondfact 2s ';
         document.querySelector('.ligne2').style.animation = 'traitfact 2s ';
@@ -126,10 +124,6 @@ function bestscroll() {
         document.querySelector('.rondfact4').style.animation = 'rondfact 2s ';
         document.querySelector('.ligne5').style.animation = 'traitfact 2s ';
         document.querySelector('.rondfact5').style.animation = 'rondfact 2s ';
-    }
-    if (document.documentElement.scrollTop > 1950) {
-       /* document.querySelector('.rondchiffre').style.animation = 'rondchiffre 2s';
-        document.querySelector('.traitchiffre').style.animation = 'traitchiffre 2s';*/
     }
 
     if(document.querySelector('.traitchiffre').getBoundingClientRect().top - window.innerHeight < 0){
@@ -170,6 +164,31 @@ document.querySelector('.enfant').addEventListener("click", vulnerableenfant);
 function vulnerableenfant() {
     document.querySelector("body > div.vulnerable > div.popup5.fermer").classList.toggle('ouvert');
 }
+
+// L'intéractivité mobile 
+// document.querySelector('.gay').addEventListener("click", vulnerablelgbt2);
+
+// function vulnerablelgbt2() {
+//     document.querySelector("body > div.vulnerable > div.popup5.fermer").classList.toggle('ouvert');
+//     document.querySelector("body > div.vulnerable > div.popup3.fermer").style.opacity = "0";
+// }
+
+// document.querySelector('.meuf').addEventListener("click", vulnerablefemme2);
+
+// function vulnerablefemme2() {
+//     document.querySelector("body > div.vulnerable > div.popup3.fermer").classList.toggle('ouvert');
+//     document.querySelector("body > div.vulnerable > div.popup3.fermer").style.opacity = "1";
+//     document.querySelector("body > div.vulnerable > div.popup4.fermer").style.opacity = "0";
+// }
+
+// document.querySelector('.gosse').addEventListener("click", vulnerableenfant2);
+
+// function vulnerableenfant2() {
+//     document.querySelector("body > div.vulnerable > div.popup4.fermer").classList.toggle('ouvert');
+//     document.querySelector("body > div.vulnerable > div.popup4.fermer").style.opacity = "1";
+//     document.querySelector("body > div.vulnerable > div.popup5.fermer").style.opacity = "0";
+// }
+
 
 document.querySelector('.fauche').addEventListener("click", changecouleur);
 
@@ -221,5 +240,25 @@ function apparaitremulti() {
 function disparaitremulti() {
     let num = this.dataset.e;
     document.querySelector(".popupaugment"+num).classList.remove("show");
+        //this.style.display="initial";
+}
+
+// Le click graphique au mobile 
+document.querySelectorAll(".rondgraphm").forEach(f=>{
+    f.addEventListener("click", apparaitremultim)
+    f.addEventListener("click", disparaitremultim)
+})
+
+function apparaitremultim() {
+   
+    let num = this.dataset.f;
+    document.querySelector(".popupaugment"+num).classList.add("boom");
+        //this.style.display="initial";
+        console.log();
+}
+
+function disparaitremultim() {
+    let num = this.dataset.f;
+    document.querySelector(".popupaugment"+num).classList.remove("boom");
         //this.style.display="initial";
 }

@@ -238,6 +238,10 @@ body > div.vulnerable > div:nth-child(9){
     margin: auto;
 }
 
+.graphmobile {
+    display: none;
+}
+
 .textaugmentation {
     font-family: 'Alumni Sans', sans-serif;
     color: white;
@@ -249,6 +253,15 @@ body > div.vulnerable > div:nth-child(9){
 
 .textaugmentation>p>span {
     color: #CDA7D7;
+}
+
+.legend {
+    font-family: 'Alumni Sans', sans-serif;
+    color: white;
+    font-size: 18pt;
+    padding: 60px 60px 60px 80px;
+    margin: auto;
+    text-align: center;
 }
 
 /* Les solutions  */
@@ -340,6 +353,7 @@ body > div.vulnerable > div:nth-child(9){
     position: absolute;
 }
 
+
 .popupaugment {
     top: 5020px;
     left: 447px;
@@ -406,9 +420,6 @@ body > div.vulnerable > div:nth-child(9){
 .show{
     display: initial !important;
 }
-
-
-
 
 
 /* Animation  */
@@ -640,9 +651,9 @@ body > div.vulnerable > div:nth-child(9){
     }
 
     .terreclair {
-        width: 600px;
+        width: 390px;
         height: 500px;
-        translate: -102px 25px;
+        translate: 0px 25px;
     }
 
     /* Intro  */
@@ -686,10 +697,12 @@ body > div.vulnerable > div:nth-child(9){
     .textfacteur {
         font-size: 20px;
         margin-top: 40px;
+        width: 350px;
+        translate: -80px 0px;
     }
 
     .facteurs .legrid .lesfacteurs > svg {
-        width: 200px;
+        translate: -160px 0px;
     }
 
     /* Partie vulnerable  */
@@ -705,6 +718,62 @@ body > div.vulnerable > div:nth-child(9){
     body > div.vulnerable > div:nth-child(9) {
         font-size: 23px;
         padding: 20px 20px 20px 20px;
+    }
+
+    /* Les données  */
+    .popup1, .popup2, .popup3, .popup4, .popup5 {
+        font-family: 'Alumni Sans', sans-serif;
+        color: white;
+        background-color: #1a243400;
+        font-size: 12pt;
+        display: inline-block;
+        border-radius: 0;
+        padding: 0px 0px 80px 10px;
+        border-left: 2px solid white;
+        border-bottom: none;
+        border-right: none;
+        border-top: none;
+        box-shadow: none;
+        position: absolute;
+    }
+
+    .popup1 {
+        top: 2620px;
+        left: 20px;
+    }
+
+    .popup2 {
+        top: 2740px;
+        left: 93px;
+        padding: 80px 0px 0px 10px
+    }
+
+    .popup3{
+        top: 2620px;
+        left: 174px;
+    }
+
+    .popup4 {
+        top: 2740px;
+        left: 249px;
+        padding: 80px 0px 0px 10px;
+    }
+
+    .popup5{
+        width: 140px;
+        top: 2620px;
+        left: 225px;
+        text-align: right;
+        border-left: none;
+        border-right: 2px solid white;
+    }
+
+    .fermer {
+        display: none;
+    }
+
+    .ouvert {
+        display: initial;
     }
 
     /* Les chiffres  */
@@ -740,14 +809,105 @@ body > div.vulnerable > div:nth-child(9){
     /* La partie graphique  */
 
     .graphique {
+        display: none;
+    }
+
+    .graphmobile {
+        display: initial;
         width: 350px;
         height: auto;
-        margin: 50px 20px 20px 20px;
+        margin: 10px 20px 70px 20px;
     }
 
     .textaugmentation {
         font-size: 20px;
         padding: 20px;
+    }
+
+    .popupaugment, .popupaugment0, .popupaugment1, .popupaugment2, .popupaugment2_1, .popupaugment3, .popupaugment4, .popupaugment5, .popupaugment6, .popupaugment7 {
+        font-family: 'Alumni Sans', sans-serif;
+        color: white;
+        font-size: 15pt;
+        background-color: rgba(255, 255, 255, 0);
+        display: inline-block;
+        padding: 80px 0px 0px 10px;
+        border-radius: 0px;
+        border: none;
+        border-left: 2px solid white;
+        box-shadow: none;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .popupaugment {
+        top: 4010px;
+        left: 56px;
+    }
+
+    .popupaugment0 {
+        top: 4020px;
+        left: 110px;
+        padding-top: 70px;
+    }
+
+    .popupaugment1 {
+        top: 3982px;
+        left: 56px;
+        padding-top: 160px;
+    }
+
+    .popupaugment2 {
+        top: 4010px;
+        left: 218px;
+    }
+
+    .popupaugment2_1 {
+        top: 4008px;
+        left: 164px;
+        padding-top: 82px;
+    }
+
+    .popupaugment3 {
+        top: 3982px;
+        left: 110px;
+        padding-top: 160px;
+    }
+
+    .popupaugment4 {
+        top: 3980px;
+        left: 164px;
+        padding-top: 162px;
+    }
+
+    .popupaugment5 {
+        top: 3960px;
+        left: 218px;
+        padding-top: 180px;
+    }
+
+    .popupaugment6 {
+        top: 3905px;
+        left: 276px;
+        padding-top: 185px;
+    }
+
+    .popupaugment7 {
+        top: 3850px;
+        left: 276px;
+        padding-top: 290px;
+    }
+
+    [class*=popupaugment] {
+        display: none;
+    }
+
+    .boom {
+        display: initial;
+    }
+
+    .legend {
+        font-size: 15px;
+        padding: 50px 10px 10px 10px;
     }
 
     /* Partie des solutions  */
@@ -763,7 +923,17 @@ body > div.vulnerable > div:nth-child(9){
     }
 
     .textsolution {
-        font-size: 17px;
-        translate: 0px 120px;
+        font-size: 27px;
+        width: 250px;
+        text-align: center;
+        translate: 0px 370px;
+    }
+
+    .deco {
+        display: none;
+    }
+
+    .decom {
+        display: initial;
     }
 }
