@@ -1,0 +1,12 @@
+<svg width="435" height="11" viewBox="0 0 435 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="trait_scolaire">
+<line id="Line 4" x1="2" y1="6" x2="428" y2="6" stroke="url(#paint0_linear_99_7)" stroke-width="4" stroke-linecap="round"/>
+<circle id="Ellipse 4" cx="429.5" cy="5.5" r="5.5" fill="#2F4B7D"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_99_7" x1="13.1902" y1="8" x2="430" y2="8" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3EDCFF"/>
+<stop offset="1" stop-color="#355389"/>
+</linearGradient>
+</defs>
+</svg>
