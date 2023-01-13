@@ -48,7 +48,7 @@ body {
     color: #C15535;
     font-size: 28pt;
     margin: auto;
-    translate: 0px -40px;
+    translate: 0px -80px;
 }
 
 .grostitre5 {
@@ -161,6 +161,7 @@ body {
     color: white;
     font-size: 25pt;
     margin: auto;
+
 }
 
 .facteurs>.legrid>.textfacteur>p>span {
@@ -168,7 +169,15 @@ body {
 }
 
 /* Partie vulnérables  */
+
 .vulnerable {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    padding-top: 30px;
+}
+
+.lecentre {
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -177,10 +186,10 @@ body {
     font-family: 'Alumni Sans', sans-serif;
     color: white;
     font-size: 25pt;
-    padding: 0px 60px 60px 80px;
+    padding: 60px 60px 60px 80px;
 }
 
-body > div.vulnerable > div:nth-child(9){
+body > div.lecentre > div {
     padding: 90px 0px 0px 0px;
     margin: auto;
     font-size: 30pt;
@@ -280,6 +289,10 @@ body > div.vulnerable > div:nth-child(9){
     grid-template-columns: 1fr;
 }
 
+.decom {
+    display: none;
+}
+
 /* L'interactivité  */
 /* les plus vulnerables  */
 .popup1, .popup2, .popup3, .popup4, .popup5 {
@@ -296,27 +309,27 @@ body > div.vulnerable > div:nth-child(9){
 }
 
 .popup1 {
-    top: 3330px;
+    top: 30px;
     left: 460px;
 }
 
 .popup2 {
-    top: 3330px;
+    top: 30px;
     left: 620px;
 }
 
 .popup3 {
-    top: 3330px;
+    top: 30px;
     left: 770px;
 }
 
 .popup4 {
-    top: 3330px;
+    top: 30px;
     left: 925px;
 }
 
 .popup5 {
-    top: 3330px;
+    top: 30px;
     left: 980px;
 }
 
@@ -353,55 +366,60 @@ body > div.vulnerable > div:nth-child(9){
     position: absolute;
 }
 
+.relative2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+}
 
 .popupaugment {
-    top: 5020px;
+    top: 10px;
     left: 447px;
 }
 
 .popupaugment0 {
-    top: 5030px;
+    top: 10px;
     left: 645px;
 }
 
 .popupaugment2_1 {
-    top: 5010px;
+    top: 10px;
     left: 830px;
 }
 
 .popupaugment2 {
-    top: 5020px;
+    top: 10px;
     left: 1027px;
 }
 
 
 .popupaugment1 {
-    top: 4975px;
+    top: 10px;
     left: 447px;
 }
 
 .popupaugment3 {
-    top: 4975px;
+    top: 10px;
     left: 645px;
 }
 
 .popupaugment4 {
-    top: 4960px;
+    top: 10px;
     left: 830px;
 }
 
 .popupaugment5 {
-    top: 4930px;
+    top: 10px;
     left: 1020px;
 }
 
 .popupaugment6 {
-    top: 4835px;
+    top: 10px;
     left: 1200px;
 }
 
 .popupaugment7 {
-    top: 4738px;
+    top: 70px;
     left: 1200px;
 }
 
@@ -684,6 +702,10 @@ body > div.vulnerable > div:nth-child(9){
         border-radius: 20px;
     }
 
+    body > div.vulnerable > div.titre {
+        font-size: 20px;
+    }
+
     /* Les traits des facteurs  */
     .legrid {
         padding: 20px;
@@ -736,35 +758,41 @@ body > div.vulnerable > div:nth-child(9){
         box-shadow: none;
         position: absolute;
     }
+    
+    body > div.lecentre > div {
+        padding-top: 20px;
+        font-size: 25px;
+    }
 
     .popup1 {
-        top: 2620px;
+        top: 50px;
         left: 20px;
     }
 
     .popup2 {
-        top: 2740px;
+        top: 160px;
         left: 93px;
         padding: 80px 0px 0px 10px
     }
 
     .popup3{
-        top: 2620px;
+        top: 50px;
         left: 174px;
     }
 
     .popup4 {
-        top: 2740px;
+        top: 160px;
         left: 249px;
         padding: 80px 0px 0px 10px;
     }
 
     .popup5{
         width: 140px;
-        top: 2620px;
-        left: 225px;
+        top: 35px;
+        left: 220px;
         text-align: right;
         border-left: none;
+        padding-right: 10px;
         border-right: 2px solid white;
     }
 
@@ -840,59 +868,59 @@ body > div.vulnerable > div:nth-child(9){
     }
 
     .popupaugment {
-        top: 4010px;
+        top: 20px;
         left: 56px;
     }
 
     .popupaugment0 {
-        top: 4020px;
+        top: 20px;
         left: 110px;
         padding-top: 70px;
     }
 
     .popupaugment1 {
-        top: 3982px;
+        top: 30px;
         left: 56px;
         padding-top: 160px;
     }
 
     .popupaugment2 {
-        top: 4010px;
+        top: 30px;
         left: 218px;
     }
 
     .popupaugment2_1 {
-        top: 4008px;
+        top: 30px;
         left: 164px;
         padding-top: 82px;
     }
 
     .popupaugment3 {
-        top: 3982px;
+        top: 20px;
         left: 110px;
         padding-top: 160px;
     }
 
     .popupaugment4 {
-        top: 3980px;
+        top: 20px;
         left: 164px;
         padding-top: 162px;
     }
 
     .popupaugment5 {
-        top: 3960px;
+        top: 20px;
         left: 218px;
         padding-top: 180px;
     }
 
     .popupaugment6 {
-        top: 3905px;
+        top: 20px;
         left: 276px;
         padding-top: 185px;
     }
 
     .popupaugment7 {
-        top: 3850px;
+        top: 20px;
         left: 276px;
         padding-top: 290px;
     }
@@ -901,7 +929,7 @@ body > div.vulnerable > div:nth-child(9){
         display: none;
     }
 
-    .boom {
+    .show {
         display: initial;
     }
 

@@ -227,8 +227,8 @@ function changecouleur5() {
 
 // Le hover du graphique 
 document.querySelectorAll(".rondgraph").forEach(e=>{
-    e.addEventListener("mouseenter", apparaitremulti)
-    e.addEventListener("mouseleave", disparaitremulti)
+    e.addEventListener("touchstart", apparaitremulti)
+    e.addEventListener("touchend", disparaitremulti)
 })
 
 function apparaitremulti() {
@@ -244,21 +244,21 @@ function disparaitremulti() {
 }
 
 // Le click graphique au mobile 
-document.querySelectorAll(".rondgraphm").forEach(f=>{
-    f.addEventListener("click", apparaitremultim)
-    f.addEventListener("click", disparaitremultim)
-})
+// document.querySelectorAll(".rondgraphm").forEach(f=>{
+//     f.addEventListener("click", apparaitremultim)
+//     f.addEventListener("click", disparaitremultim)
+// })
 
-function apparaitremultim() {
+// function apparaitremultim() {
    
-    let num = this.dataset.f;
-    document.querySelector(".popupaugment"+num).classList.add("boom");
-        //this.style.display="initial";
-        console.log();
-}
+//     let num = this.dataset.f;
+//     document.querySelector(".popupaugment"+num).classList.add("boom");
+//         //this.style.display="initial";
+//         console.log();
+// }
 
-function disparaitremultim() {
-    let num = this.dataset.f;
-    document.querySelector(".popupaugment"+num).classList.remove("boom");
-        //this.style.display="initial";
-}
+// function disparaitremultim() {
+//     let num = this.dataset.f;
+//     document.querySelector(".popupaugment"+num).classList.remove("boom");
+//         //this.style.display="initial";
+// }
