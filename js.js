@@ -130,6 +130,15 @@ function bestscroll() {
         document.querySelector('.traitchiffre').style.animation = 'traitchiffre 2s';
         document.querySelector('.rondchiffre').style.animation = 'rondchiffre 2s';
     }
+
+    if(document.querySelector('.traitrose').getBoundingClientRect().top - window.innerHeight < 0){
+        document.querySelector('.traitrose').style.animation = 'graph 3s';
+        document.querySelector('.traitbleu').style.animation = 'graph2 3s';
+    }
+    if(document.querySelector('.traitrosem').getBoundingClientRect().top - window.innerHeight < 0){
+        document.querySelector('.traitrosem').style.animation = 'graph 3s';
+        document.querySelector('.traitbleum').style.animation = 'graph2 3s';
+    }
 }
 
 // Les intéractions
@@ -226,9 +235,10 @@ function changecouleur5() {
 }
 
 // Le hover du graphique 
-document.querySelectorAll(".rondgraph").forEach(e=>{
-    e.addEventListener("touchstart", apparaitremulti)
-    e.addEventListener("touchend", disparaitremulti)
+document.querySelectorAll(".rondgraph, .rondgraphm").forEach(e=>{
+    e.addEventListener("touchstart", apparaitremulti);
+    e.addEventListener("click", apparaitremulti);
+    e.addEventListener("touchend", disparaitremulti);
 })
 
 function apparaitremulti() {

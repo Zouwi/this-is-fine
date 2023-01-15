@@ -310,27 +310,27 @@ body > div.lecentre > div {
 
 .popup1 {
     top: 30px;
-    left: 460px;
+    left: 550px;
 }
 
 .popup2 {
     top: 30px;
-    left: 620px;
+    left: 720px;
 }
 
 .popup3 {
     top: 30px;
-    left: 770px;
+    left: 870px;
 }
 
 .popup4 {
     top: 30px;
-    left: 925px;
+    left: 1025px;
 }
 
 .popup5 {
     top: 30px;
-    left: 980px;
+    left: 1080px;
 }
 
 .fermer {
@@ -359,7 +359,7 @@ body > div.lecentre > div {
     font-size: 20pt;
     background-color: white;
     display: inline-block;
-    padding: 10px 20px 10px 20px;
+    padding: 5px 20px 5px 20px;
     border-radius: 20px;
     border: 2px solid #CDA7D7;
     box-shadow: 3px 4px #CDA7D7;
@@ -373,54 +373,54 @@ body > div.lecentre > div {
 }
 
 .popupaugment {
-    top: 10px;
-    left: 447px;
+    top: 325px;
+    left: 587px;
 }
 
 .popupaugment0 {
-    top: 10px;
-    left: 645px;
+    top: 335px;
+    left: 745px;
 }
 
 .popupaugment2_1 {
-    top: 10px;
-    left: 830px;
+    top: 315px;
+    left: 930px;
 }
 
 .popupaugment2 {
-    top: 10px;
-    left: 1027px;
+    top: 325px;
+    left: 1127px;
 }
 
 
 .popupaugment1 {
-    top: 10px;
-    left: 447px;
+    top: 190px;
+    left: 587px;
 }
 
 .popupaugment3 {
-    top: 10px;
-    left: 645px;
+    top: 190px;
+    left: 745px;
 }
 
 .popupaugment4 {
-    top: 10px;
-    left: 830px;
+    top: 180px;
+    left: 930px;
 }
 
 .popupaugment5 {
-    top: 10px;
-    left: 1020px;
+    top: 150px;
+    left: 1120px;
 }
 
 .popupaugment6 {
-    top: 10px;
-    left: 1200px;
+    top: 135px;
+    left: 1300px;
 }
 
 .popupaugment7 {
-    top: 70px;
-    left: 1200px;
+    top: -40px;
+    left: 1300px;
 }
 
 .popupaugment > span, .popupaugment0 > span, .popupaugment1 > span, .popupaugment2 > span, .popupaugment2_1 > span, .popupaugment3 > span, .popupaugment4 > span, .popupaugment5 > span, .popupaugment6 > span, .popupaugment7 > span {
@@ -640,6 +640,40 @@ body > div.lecentre > div {
     
 }
 
+/* Animation du graphique  */
+@keyframes graph {
+    0% {
+        stroke-dashoffset: 100;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes graph2 {
+    0% {
+        stroke-dashoffset: -100;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+.traitrose, .traitrosem {
+
+    stroke-dasharray: 100 100;
+}
+
+.traitbleu, .traitbleum {
+
+    stroke-dasharray: 100 100;
+
+}
+
+
 @media screen and (max-width: 900px)
 {    
     .grostitre1 {
@@ -707,6 +741,10 @@ body > div.lecentre > div {
     }
 
     /* Les traits des facteurs  */
+    .lesfacteurs {
+        width: 300px;
+    }
+
     .legrid {
         padding: 20px;
         grid-template-columns: 1fr;
@@ -844,7 +882,7 @@ body > div.lecentre > div {
         display: initial;
         width: 350px;
         height: auto;
-        margin: 10px 20px 70px 20px;
+        margin: 40px 20px 70px 20px;
     }
 
     .textaugmentation {
@@ -868,61 +906,61 @@ body > div.lecentre > div {
     }
 
     .popupaugment {
-        top: 20px;
+        top: 220px;
         left: 56px;
     }
 
     .popupaugment0 {
-        top: 20px;
+        top: 230px;
         left: 110px;
         padding-top: 70px;
     }
 
     .popupaugment1 {
-        top: 30px;
+        top: 10px;
         left: 56px;
-        padding-top: 160px;
+        padding: 0px 0px 150px 8px;
     }
 
     .popupaugment2 {
-        top: 30px;
+        top: 220px;
         left: 218px;
     }
 
     .popupaugment2_1 {
-        top: 30px;
+        top: 208px;
         left: 164px;
-        padding-top: 82px;
+        padding-top: 92px;
     }
 
     .popupaugment3 {
-        top: 20px;
+        top: 10px;
         left: 110px;
-        padding-top: 160px;
+        padding: 0px 0px 150px 8px;
     }
 
     .popupaugment4 {
-        top: 20px;
+        top: 10px;
         left: 164px;
-        padding-top: 162px;
+        padding: 0px 0px 150px 8px;
     }
 
     .popupaugment5 {
-        top: 20px;
+        top: 10px;
         left: 218px;
-        padding-top: 180px;
+        padding: 0px 0px 130px 8px;
     }
 
     .popupaugment6 {
-        top: 20px;
+        top: 115px;
         left: 276px;
         padding-top: 185px;
     }
 
     .popupaugment7 {
-        top: 20px;
+        top: 10px;
         left: 276px;
-        padding-top: 290px;
+        padding: 0px 0px 20px 8px;
     }
 
     [class*=popupaugment] {
