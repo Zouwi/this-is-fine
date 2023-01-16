@@ -165,6 +165,10 @@ body {
 
 }
 
+.traitalim, .traitscom, .traitsolm, .traitconcm, .traitsomm {
+    display: none;
+}
+
 .facteurs>.legrid>.textfacteur>p>span {
     color: #CDA7D7;
 }
