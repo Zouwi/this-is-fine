@@ -126,6 +126,19 @@ function bestscroll() {
         document.querySelector('.rondfact5').style.animation = 'rondfact 2s ';
     }
 
+    if(document.querySelector('.lignem').getBoundingClientRect().top - window.innerHeight < 0) {
+        document.querySelector('.lignem').style.animation = 'traitfact 2s ';
+        document.querySelector('.ligne2m').style.animation = 'traitfact 2s ';
+        document.querySelector('.ligne3m').style.animation = 'traitfact 2s ';
+        document.querySelector('.ligne4m').style.animation = 'traitfact 2s ';
+        document.querySelector('.ligne5m').style.animation = 'traitfact 2s ';
+        document.querySelector('.pointm').style.animation = 'rondfact 2s ';
+        document.querySelector('.pointm2').style.animation = 'rondfact 2s ';
+        document.querySelector('.pointm3').style.animation = 'rondfact 2s ';
+        document.querySelector('.pointm4').style.animation = 'rondfact 2s ';
+        document.querySelector('.pointm5').style.animation = 'rondfact 2s ';
+    }
+
     if(document.querySelector('.traitchiffre').getBoundingClientRect().top - window.innerHeight < 0){
         document.querySelector('.traitchiffre').style.animation = 'traitchiffre 2s';
         document.querySelector('.rondchiffre').style.animation = 'rondchiffre 2s';

@@ -1,0 +1,12 @@
+<svg width="388" height="11" viewBox="0 0 388 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="trait_solitude">
+<line id="Line 1" x1="2" y1="5" x2="383" y2="5" stroke="url(#paint0_linear_148_75)" stroke-width="4" stroke-linecap="round"/>
+<circle id="Ellipse 1" cx="382.5" cy="5.5" r="5.5" fill="#83B9F5"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_148_75" x1="11.8098" y1="7" x2="385" y2="7" gradientUnits="userSpaceOnUse">
+<stop stop-color="#70169A"/>
+<stop offset="1" stop-color="#8FC9FF"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,12 @@
+<svg width="239" height="11" viewBox="0 0 239 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="trait_concentrer">
+<line id="Line 2" x1="2" y1="5" x2="231" y2="5" stroke="url(#paint0_linear_148_78)" stroke-width="4" stroke-linecap="round"/>
+<circle id="Ellipse 2" cx="233.5" cy="5.5" r="5.5" fill="#C79CD3"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_148_78" x1="7.14724" y1="7" x2="233" y2="7" gradientUnits="userSpaceOnUse">
+<stop stop-color="#50CCE8"/>
+<stop offset="1" stop-color="#CDA7D7"/>
+</linearGradient>
+</defs>
+</svg>

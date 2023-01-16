@@ -142,6 +142,7 @@ body {
     font-size: 28pt;
     padding: 120px 40px 80px 80px;
 }
+
 /* Les facteurs  */
 .facteurs>.legrid>.lesfacteurs>p {
     font-family: 'Alumni Sans', sans-serif;
@@ -189,7 +190,7 @@ body {
     padding: 60px 60px 60px 80px;
 }
 
-body > div.lecentre > div {
+body>div.lecentre>div {
     padding: 90px 0px 0px 0px;
     margin: auto;
     font-size: 30pt;
@@ -295,7 +296,11 @@ body > div.lecentre > div {
 
 /* L'interactivité  */
 /* les plus vulnerables  */
-.popup1, .popup2, .popup3, .popup4, .popup5 {
+.popup1,
+.popup2,
+.popup3,
+.popup4,
+.popup5 {
     font-family: 'Alumni Sans', sans-serif;
     color: black;
     font-size: 20pt;
@@ -348,12 +353,25 @@ body > div.lecentre > div {
     stroke: #1A2434;
 }
 
-.fauche, .couleur, .lgbt, .femme, .enfant:hover {
+.fauche,
+.couleur,
+.lgbt,
+.femme,
+.enfant:hover {
     cursor: pointer;
 }
 
 /* Les stats du grahique d'augmentation  */
-.popupaugment, .popupaugment0, .popupaugment1, .popupaugment2, .popupaugment2_1, .popupaugment3, .popupaugment4, .popupaugment5, .popupaugment6, .popupaugment7 {
+.popupaugment,
+.popupaugment0,
+.popupaugment1,
+.popupaugment2,
+.popupaugment2_1,
+.popupaugment3,
+.popupaugment4,
+.popupaugment5,
+.popupaugment6,
+.popupaugment7 {
     font-family: 'Alumni Sans', sans-serif;
     color: black;
     font-size: 20pt;
@@ -423,7 +441,16 @@ body > div.lecentre > div {
     left: 1300px;
 }
 
-.popupaugment > span, .popupaugment0 > span, .popupaugment1 > span, .popupaugment2 > span, .popupaugment2_1 > span, .popupaugment3 > span, .popupaugment4 > span, .popupaugment5 > span, .popupaugment6 > span, .popupaugment7 > span {
+.popupaugment>span,
+.popupaugment0>span,
+.popupaugment1>span,
+.popupaugment2>span,
+.popupaugment2_1>span,
+.popupaugment3>span,
+.popupaugment4>span,
+.popupaugment5>span,
+.popupaugment6>span,
+.popupaugment7>span {
     font-family: 'Almarai', sans-serif;
 }
 
@@ -435,7 +462,7 @@ body > div.lecentre > div {
     display: none;
 }
 
-.show{
+.show {
     display: initial !important;
 }
 
@@ -526,7 +553,7 @@ body > div.lecentre > div {
 
     100% {
         offset-distance: 0%;
-        
+
     }
 }
 
@@ -558,7 +585,11 @@ body > div.lecentre > div {
     }
 }
 
-.ligne, .ligne2, .ligne3, .ligne4, .ligne5 {
+.ligne,
+.ligne2,
+.ligne3,
+.ligne4,
+.ligne5 {
 
     stroke-dasharray: 100 100;
 }
@@ -612,7 +643,7 @@ body > div.lecentre > div {
 
     100% {
         offset-distance: 100%;
-        
+
     }
 }
 
@@ -620,7 +651,7 @@ body > div.lecentre > div {
     offset-path: path("M122.5 12.0122C110.939 12.0122 99.1725 13.8571 87.5703 17.7108C29.6821 37.0206 -1.55788 99.5825 17.7109 157.43C36.9796 215.318 99.5415 246.599 157.43 227.289C173.747 221.878 187.932 213.022 199.452 201.789C203.801 197.193 214.1 185.2 220.5 174");
     transform-origin: center;
     transform-box: fill-box;
-    
+
     animation-fill-mode: forwards !important;
 }
 
@@ -637,7 +668,7 @@ body > div.lecentre > div {
 .cercle {
     animation: cercle 2s infinite linear;
     stroke-dasharray: 10 2;
-    
+
 }
 
 /* Animation du graphique  */
@@ -662,20 +693,25 @@ body > div.lecentre > div {
 }
 
 
-.traitrose, .traitrosem {
+.traitrose,
+.traitrosem {
 
     stroke-dasharray: 100 100;
 }
 
-.traitbleu, .traitbleum {
+.traitbleu,
+.traitbleum {
 
     stroke-dasharray: 100 100;
 
 }
 
 
-@media screen and (max-width: 900px)
-{    
+@media screen and (max-width: 900px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .grostitre1 {
         font-size: 40px;
         margin-bottom: 50px;
@@ -736,13 +772,17 @@ body > div.lecentre > div {
         border-radius: 20px;
     }
 
-    body > div.vulnerable > div.titre {
+    body>div.vulnerable>div.titre {
         font-size: 20px;
     }
 
     /* Les traits des facteurs  */
-    .lesfacteurs {
-        width: 300px;
+    .traitalim, .traitscom, .traitsolm, .traitconcm, .traitsomm {
+        display: initial;
+    }
+
+    .isolement, .sommeil, .concentrer, .alimentaire, .scolaire {
+        display: none;
     }
 
     .legrid {
@@ -750,7 +790,7 @@ body > div.lecentre > div {
         grid-template-columns: 1fr;
     }
 
-    .facteurs .legrid .lesfacteurs > p {
+    .facteurs .legrid .lesfacteurs>p {
         font-size: 25px;
     }
 
@@ -758,11 +798,53 @@ body > div.lecentre > div {
         font-size: 20px;
         margin-top: 40px;
         width: 350px;
-        translate: -80px 0px;
     }
 
-    .facteurs .legrid .lesfacteurs > svg {
-        translate: -160px 0px;
+
+
+    .lignem,
+    .ligne2m,
+    .ligne3m,
+    .ligne4m,
+    .ligne5m {
+        stroke-dashoffset: 0px;
+    }
+
+    .lignem,
+    .ligne2m,
+    .ligne3m,
+    .ligne4m,
+    .ligne5m {
+        stroke-dasharray: 100 100;
+    }
+
+    @keyframes traitfact {
+        0% {
+            stroke-dashoffset: 100;
+        }
+
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes rondfact {
+        0% {
+            translate: -100% 0px;
+        }
+    
+        100% {
+            translate: 0px 0px;
+        }
+    }
+
+
+    .traitsolm {
+        width: 350px;
+    }
+
+    .traitscom {
+        width: 330px;
     }
 
     /* Partie vulnerable  */
@@ -775,13 +857,17 @@ body > div.lecentre > div {
         width: 350px;
     }
 
-    body > div.vulnerable > div:nth-child(9) {
+    body>div.vulnerable>div:nth-child(9) {
         font-size: 23px;
         padding: 20px 20px 20px 20px;
     }
 
     /* Les données  */
-    .popup1, .popup2, .popup3, .popup4, .popup5 {
+    .popup1,
+    .popup2,
+    .popup3,
+    .popup4,
+    .popup5 {
         font-family: 'Alumni Sans', sans-serif;
         color: white;
         background-color: #1a243400;
@@ -796,8 +882,8 @@ body > div.lecentre > div {
         box-shadow: none;
         position: absolute;
     }
-    
-    body > div.lecentre > div {
+
+    body>div.lecentre>div {
         padding-top: 20px;
         font-size: 25px;
     }
@@ -813,7 +899,7 @@ body > div.lecentre > div {
         padding: 80px 0px 0px 10px
     }
 
-    .popup3{
+    .popup3 {
         top: 50px;
         left: 174px;
     }
@@ -824,7 +910,7 @@ body > div.lecentre > div {
         padding: 80px 0px 0px 10px;
     }
 
-    .popup5{
+    .popup5 {
         width: 140px;
         top: 35px;
         left: 220px;
@@ -890,7 +976,16 @@ body > div.lecentre > div {
         padding: 20px;
     }
 
-    .popupaugment, .popupaugment0, .popupaugment1, .popupaugment2, .popupaugment2_1, .popupaugment3, .popupaugment4, .popupaugment5, .popupaugment6, .popupaugment7 {
+    .popupaugment,
+    .popupaugment0,
+    .popupaugment1,
+    .popupaugment2,
+    .popupaugment2_1,
+    .popupaugment3,
+    .popupaugment4,
+    .popupaugment5,
+    .popupaugment6,
+    .popupaugment7 {
         font-family: 'Alumni Sans', sans-serif;
         color: white;
         font-size: 15pt;
